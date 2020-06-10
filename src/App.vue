@@ -50,7 +50,7 @@ export default {
           this.setCookie(res.data.key);
           this.$router.push({ name: "List" });
         })
-        .catch(err => console.log(err.response));
+        .catch(err => console.log(err.response.data));
     },
     logout() {
       const config = {
