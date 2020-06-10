@@ -13,9 +13,9 @@
 
 <script>
 import axios from "axios";
-
+import SERVER from "@/api/drf";
 //django url 이것으로 ...터미널 1번에 뜬 서버..
-const SERVER_URL = "http://127.0.0.1:8000";
+const SERVER_URL = SERVER;
 export default {
   name: "App",
   data() {

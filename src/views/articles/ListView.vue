@@ -22,7 +22,9 @@
 
 <script>
 import axios from "axios";
-const SERVER_URL = "http://localhost:8000";
+import SERVER from "@/api/drf";
+//django url 이것으로 ...터미널 1번에 뜬 서버..
+const SERVER_URL = SERVER;
 export default {
   name: "ListView",
   data() {
