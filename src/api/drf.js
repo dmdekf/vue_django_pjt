@@ -1,3 +1,3 @@
 export default {
-  URL: "https://djangovuepjt.herokuapp.com",
+  URL: "http://djangovuepjt.herokuapp.com",
 };
