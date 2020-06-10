@@ -15,7 +15,7 @@
 import axios from "axios";
 import SERVER from "@/api/drf";
 //django url 이것으로 ...터미널 1번에 뜬 서버..
-const SERVER_URL = SERVER.URL;
+const SERVER_URL = SERVER;
 export default {
   name: "App",
   data() {
@@ -46,7 +46,7 @@ export default {
           this.setCookie(res.data.key);
           this.$router.push({ name: "List" });
         })
-        .catch(err => console.log(err.response.data));
+        .catch(err => console.log(err.response));
     },
     logout() {
       const config = {
