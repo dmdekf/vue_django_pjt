@@ -32,7 +32,7 @@ export default {
     login(loginData) {
       axios
         .post(SERVER_URL + "/rest-auth/login/", loginData, {
-          credentials: true
+          withCredentials: true
         })
         .then(res => {
           this.setCookie(res.data.key);
@@ -44,7 +44,7 @@ export default {
       console.log(signupData);
       axios
         .post(SERVER_URL + "/rest-auth/signup/", signupData, {
-          credentials: true
+          withCredentials: true
         })
         .then(res => {
           this.setCookie(res.data.key);

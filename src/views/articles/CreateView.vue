@@ -44,7 +44,7 @@ export default {
       const config = {
         headers: {
           Authorization: `Token ${this.$cookies.get("auth-token")}`,
-          credentials: true
+          withCredentials: true
         }
       };
       axios
