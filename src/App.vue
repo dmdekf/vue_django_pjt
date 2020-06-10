@@ -31,7 +31,9 @@ export default {
 
     login(loginData) {
       axios
-        .post(SERVER_URL + "/rest-auth/login/", loginData)
+        .post(SERVER_URL + "/rest-auth/login/", loginData, {
+          credentials: true
+        })
         .then(res => {
           this.setCookie(res.data.key);
           this.$router.push({ name: "List" });
@@ -41,7 +43,9 @@ export default {
     signup(signupData) {
       console.log(signupData);
       axios
-        .post(SERVER_URL + "/rest-auth/signup/", signupData)
+        .post(SERVER_URL + "/rest-auth/signup/", signupData, {
+          credentials: true
+        })
         .then(res => {
           this.setCookie(res.data.key);
           this.$router.push({ name: "List" });
