@@ -43,8 +43,7 @@ export default {
     createArticle() {
       const config = {
         headers: {
-          Authorization: `Token ${this.$cookies.get("auth-token")}`,
-          withCredentials: true
+          Authorization: `Token ${this.$cookies.get("auth-token")}`
         }
       };
       axios
