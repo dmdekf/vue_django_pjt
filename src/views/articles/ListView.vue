@@ -24,7 +24,7 @@
 import axios from "axios";
 import SERVER from "@/api/drf";
 //django url 이것으로 ...터미널 1번에 뜬 서버..
-const SERVER_URL = SERVER;
+const SERVER_URL = SERVER.URL;
 export default {
   name: "ListView",
   data() {
